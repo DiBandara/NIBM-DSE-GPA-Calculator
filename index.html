@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIBM GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 GPA Calculator</h1>
+    <p>Select your grades for each subject below:</p>
+
+    <form id="gpaForm">
+      <!-- Semester 1 -->
+      <h2>Semester 1</h2>
+      <div class="subject">
+        <label>Introduction to Computer Science (3 Credits)</label>
+        <select data-credits="3" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Mathematics for Computing (3 Credits)</label>
+        <select data-credits="3" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Programming Fundamentals (3 Credits)</label>
+        <select data-credits="3" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Electronics & Computer Architecture (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Object Oriented Programming (2 Credits)</label>
+        <select data-credits="2" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Database Management Systems (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <!-- Semester 2 -->
+      <h2>Semester 2</h2>
+      <div class="subject">
+        <label>Computer Networks (3 Credits)</label>
+        <select data-credits="3" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>GUI Application Development (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Software Engineering (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Enterprise App Development-1 (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Operating Systems (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Developing Modern Web (4 Credits)</label>
+        <select data-credits="4" class="grade-select"></select>
+      </div>
+
+      <div class="subject">
+        <label>Business Solution Development Project (3 Credits)</label>
+        <select data-credits="3" class="grade-select"></select>
+      </div>
+
+      <button type="button" onclick="calculateGPA()">Calculate GPA</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
